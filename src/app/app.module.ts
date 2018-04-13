@@ -4,10 +4,11 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SignupComponent } from './signup/signup.component';
 
 const appRoutes: Routes = [
-  /*{ path: 'foo', component: FooComponent },
-  { path: '', redirectTo: '/foo', pathMatch: 'full' },*/
+  { path: 'signup', component: SignupComponent },
+  /*{ path: '', redirectTo: '/foo', pathMatch: 'full' },*/
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -15,7 +16,8 @@ const appRoutes: Routes = [
 @NgModule({
     declarations: [
 	AppComponent,
-	PageNotFoundComponent
+	PageNotFoundComponent,
+	SignupComponent
     ],
     imports: [
 	BrowserModule,
